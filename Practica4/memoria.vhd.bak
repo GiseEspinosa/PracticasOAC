@@ -1,0 +1,26 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity memoria is
+	port(
+		entrada: in std_logic_vector(1 downto 0); 
+		prueba: out std_logic_vector(1 downto 0)
+	);
+end memoria;
+
+architecture Behavioral of memoria is
+begin
+
+	process(entrada)
+	begin
+		case entrada is
+			when "00" => salida <= "00"; --A
+			when "01" => salida <= "01"; --B
+			when "10" => salida <= "10"; --C
+			when others => salida <= "11"; --D
+		end case;
+	end process;
+	
+end Behavioral;

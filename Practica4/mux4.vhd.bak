@@ -1,0 +1,25 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity divisor_datos is
+	port(
+		entrada : in std_logic_vector(15 downto 0);
+		prueba : out std_logic_vector(2 downto 0);
+		ligaF : out std_logic_vector(3 downto 0);
+		ligaV : out std_logic_vector(3 downto 0);
+		salidaF : out std_logic_vector(3 downto 0);
+		salidaV : out std_logic_vector(3 downto 0)
+	);
+end divisor_datos;
+
+architecture Behavioral of divisor_datos is
+begin
+	
+	process(entrada)
+	begin
+		ligaF <= entrada(6 downto 4);
+		salidaF <= entrada(3 downto 0);
+	end process;
+end Behavioral;
