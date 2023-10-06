@@ -22,6 +22,6 @@ begin
 				cuenta := cuenta + 1;		--											|
 			end if;								--											|
 		end if;									--											|
-		div_clk <= cuenta(24);			-- Tomamos el bit más significativo ^ (25) para la tarjeta. (0) en simulacion
+		div_clk <= cuenta(0);			-- Tomamos el bit más significativo ^ (25) para la tarjeta. (0) en simulacion
 	end process;
 end Behavioral;

@@ -1,0 +1,11 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity registro3x3 is
+	Port(
+		reloj : in STD_LOGIC;
+		reset : in STD_LOGIC;
+		entrada : in STD_LOGIC_VECTOR(2 downto 0);
+		salida : out STD_LOGIC_VECTOR(2 downto 0)
+	);
+end registro3x3;

@@ -1,6 +1,6 @@
 Timing Analyzer report for practica4
-Fri Sep 29 07:12:21 2023
-Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
+Thu Oct 05 23:25:12 2023
+Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
 ---------------------
@@ -53,7 +53,7 @@ Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2023  Intel Corporation. All rights reserved.
+Copyright (C) 2019  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -70,18 +70,18 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+--------------------------------------------------------------------------------+
-; Timing Analyzer Summary                                                        ;
-+-----------------------+--------------------------------------------------------+
-; Quartus Prime Version ; Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition ;
-; Timing Analyzer       ; Legacy Timing Analyzer                                 ;
-; Revision Name         ; practica4                                              ;
-; Device Family         ; MAX 10                                                 ;
-; Device Name           ; 10M50DAF484C7G                                         ;
-; Timing Models         ; Final                                                  ;
-; Delay Model           ; Combined                                               ;
-; Rise/Fall Delays      ; Enabled                                                ;
-+-----------------------+--------------------------------------------------------+
++-----------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                     ;
++-----------------------+-----------------------------------------------------+
+; Quartus Prime Version ; Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
+; Timing Analyzer       ; Legacy Timing Analyzer                              ;
+; Revision Name         ; practica4                                           ;
+; Device Family         ; MAX 10                                              ;
+; Device Name           ; 10M50DAF484C7G                                      ;
+; Timing Models         ; Final                                               ;
+; Delay Model           ; Combined                                            ;
+; Rise/Fall Delays      ; Enabled                                             ;
++-----------------------+-----------------------------------------------------+
 
 
 +------------------------------------------+
@@ -90,56 +90,56 @@ https://fpgasoftware.intel.com/eula.
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
 ; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.02        ;
-; Maximum used               ; 2           ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   1.7%      ;
+;     Processors 2-4         ;   0.6%      ;
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Clocks                                                                                                                                                                                                               ;
-+---------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------------------------+
-; Clock Name                ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets                       ;
-+---------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------------------------+
-; clk                       ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk }                       ;
-; div_frec:inst1|cuenta[24] ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { div_frec:inst1|cuenta[24] } ;
-+---------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                                             ;
++--------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------------------------+
+; Clock Name               ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets                      ;
++--------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------------------------+
+; clk                      ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk }                      ;
+; div_frec:inst1|cuenta[0] ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { div_frec:inst1|cuenta[0] } ;
++--------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------------------------+
 
 
-+-----------------------------------------------------------------+
-; Slow 1200mV 85C Model Fmax Summary                              ;
-+------------+-----------------+---------------------------+------+
-; Fmax       ; Restricted Fmax ; Clock Name                ; Note ;
-+------------+-----------------+---------------------------+------+
-; 185.77 MHz ; 185.77 MHz      ; clk                       ;      ;
-; 382.41 MHz ; 382.41 MHz      ; div_frec:inst1|cuenta[24] ;      ;
-+------------+-----------------+---------------------------+------+
++----------------------------------------------------------------+
+; Slow 1200mV 85C Model Fmax Summary                             ;
++------------+-----------------+--------------------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name               ; Note ;
++------------+-----------------+--------------------------+------+
+; 191.17 MHz ; 191.17 MHz      ; clk                      ;      ;
+; 388.35 MHz ; 388.35 MHz      ; div_frec:inst1|cuenta[0] ;      ;
++------------+-----------------+--------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
-+----------------------------------------------------+
-; Slow 1200mV 85C Model Setup Summary                ;
-+---------------------------+--------+---------------+
-; Clock                     ; Slack  ; End Point TNS ;
-+---------------------------+--------+---------------+
-; clk                       ; -4.383 ; -77.203       ;
-; div_frec:inst1|cuenta[24] ; -1.615 ; -4.370        ;
-+---------------------------+--------+---------------+
-
-
 +---------------------------------------------------+
-; Slow 1200mV 85C Model Hold Summary                ;
-+---------------------------+-------+---------------+
-; Clock                     ; Slack ; End Point TNS ;
-+---------------------------+-------+---------------+
-; div_frec:inst1|cuenta[24] ; 0.347 ; 0.000         ;
-; clk                       ; 0.638 ; 0.000         ;
-+---------------------------+-------+---------------+
+; Slow 1200mV 85C Model Setup Summary               ;
++--------------------------+--------+---------------+
+; Clock                    ; Slack  ; End Point TNS ;
++--------------------------+--------+---------------+
+; clk                      ; -4.297 ; -98.540       ;
+; div_frec:inst1|cuenta[0] ; -1.575 ; -4.260        ;
++--------------------------+--------+---------------+
+
+
++--------------------------------------------------+
+; Slow 1200mV 85C Model Hold Summary               ;
++--------------------------+-------+---------------+
+; Clock                    ; Slack ; End Point TNS ;
++--------------------------+-------+---------------+
+; div_frec:inst1|cuenta[0] ; 0.348 ; 0.000         ;
+; clk                      ; 0.515 ; 0.000         ;
++--------------------------+-------+---------------+
 
 
 ------------------------------------------
@@ -154,14 +154,14 @@ No paths to report.
 No paths to report.
 
 
-+----------------------------------------------------+
-; Slow 1200mV 85C Model Minimum Pulse Width Summary  ;
-+---------------------------+--------+---------------+
-; Clock                     ; Slack  ; End Point TNS ;
-+---------------------------+--------+---------------+
-; clk                       ; -3.000 ; -42.284       ;
-; div_frec:inst1|cuenta[24] ; -1.403 ; -4.209        ;
-+---------------------------+--------+---------------+
++---------------------------------------------------+
+; Slow 1200mV 85C Model Minimum Pulse Width Summary ;
++--------------------------+--------+---------------+
+; Clock                    ; Slack  ; End Point TNS ;
++--------------------------+--------+---------------+
+; clk                      ; -3.000 ; -42.284       ;
+; div_frec:inst1|cuenta[0] ; -1.403 ; -4.209        ;
++--------------------------+--------+---------------+
 
 
 -----------------------------------------------
@@ -170,35 +170,35 @@ No paths to report.
 No synchronizer chains to report.
 
 
-+-----------------------------------------------------------------------------------------------------------+
-; Slow 1200mV 0C Model Fmax Summary                                                                         ;
-+------------+-----------------+---------------------------+------------------------------------------------+
-; Fmax       ; Restricted Fmax ; Clock Name                ; Note                                           ;
-+------------+-----------------+---------------------------+------------------------------------------------+
-; 200.36 MHz ; 200.36 MHz      ; clk                       ;                                                ;
-; 417.19 MHz ; 416.15 MHz      ; div_frec:inst1|cuenta[24] ; limit due to minimum period restriction (tmin) ;
-+------------+-----------------+---------------------------+------------------------------------------------+
++----------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Fmax Summary                                                                        ;
++------------+-----------------+--------------------------+------------------------------------------------+
+; Fmax       ; Restricted Fmax ; Clock Name               ; Note                                           ;
++------------+-----------------+--------------------------+------------------------------------------------+
+; 204.83 MHz ; 204.83 MHz      ; clk                      ;                                                ;
+; 422.83 MHz ; 416.15 MHz      ; div_frec:inst1|cuenta[0] ; limit due to minimum period restriction (tmin) ;
++------------+-----------------+--------------------------+------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
-+----------------------------------------------------+
-; Slow 1200mV 0C Model Setup Summary                 ;
-+---------------------------+--------+---------------+
-; Clock                     ; Slack  ; End Point TNS ;
-+---------------------------+--------+---------------+
-; clk                       ; -3.991 ; -68.552       ;
-; div_frec:inst1|cuenta[24] ; -1.397 ; -3.739        ;
-+---------------------------+--------+---------------+
-
-
 +---------------------------------------------------+
-; Slow 1200mV 0C Model Hold Summary                 ;
-+---------------------------+-------+---------------+
-; Clock                     ; Slack ; End Point TNS ;
-+---------------------------+-------+---------------+
-; div_frec:inst1|cuenta[24] ; 0.311 ; 0.000         ;
-; clk                       ; 0.592 ; 0.000         ;
-+---------------------------+-------+---------------+
+; Slow 1200mV 0C Model Setup Summary                ;
++--------------------------+--------+---------------+
+; Clock                    ; Slack  ; End Point TNS ;
++--------------------------+--------+---------------+
+; clk                      ; -3.882 ; -87.682       ;
+; div_frec:inst1|cuenta[0] ; -1.365 ; -3.679        ;
++--------------------------+--------+---------------+
+
+
++--------------------------------------------------+
+; Slow 1200mV 0C Model Hold Summary                ;
++--------------------------+-------+---------------+
+; Clock                    ; Slack ; End Point TNS ;
++--------------------------+-------+---------------+
+; div_frec:inst1|cuenta[0] ; 0.311 ; 0.000         ;
+; clk                      ; 0.460 ; 0.000         ;
++--------------------------+-------+---------------+
 
 
 -----------------------------------------
@@ -213,14 +213,14 @@ No paths to report.
 No paths to report.
 
 
-+----------------------------------------------------+
-; Slow 1200mV 0C Model Minimum Pulse Width Summary   ;
-+---------------------------+--------+---------------+
-; Clock                     ; Slack  ; End Point TNS ;
-+---------------------------+--------+---------------+
-; clk                       ; -3.000 ; -42.284       ;
-; div_frec:inst1|cuenta[24] ; -1.403 ; -4.209        ;
-+---------------------------+--------+---------------+
++---------------------------------------------------+
+; Slow 1200mV 0C Model Minimum Pulse Width Summary  ;
++--------------------------+--------+---------------+
+; Clock                    ; Slack  ; End Point TNS ;
++--------------------------+--------+---------------+
+; clk                      ; -3.000 ; -42.284       ;
+; div_frec:inst1|cuenta[0] ; -1.403 ; -4.209        ;
++--------------------------+--------+---------------+
 
 
 ----------------------------------------------
@@ -229,24 +229,24 @@ No paths to report.
 No synchronizer chains to report.
 
 
-+----------------------------------------------------+
-; Fast 1200mV 0C Model Setup Summary                 ;
-+---------------------------+--------+---------------+
-; Clock                     ; Slack  ; End Point TNS ;
-+---------------------------+--------+---------------+
-; clk                       ; -1.351 ; -19.771       ;
-; div_frec:inst1|cuenta[24] ; -0.095 ; -0.190        ;
-+---------------------------+--------+---------------+
-
-
 +---------------------------------------------------+
-; Fast 1200mV 0C Model Hold Summary                 ;
-+---------------------------+-------+---------------+
-; Clock                     ; Slack ; End Point TNS ;
-+---------------------------+-------+---------------+
-; div_frec:inst1|cuenta[24] ; 0.152 ; 0.000         ;
-; clk                       ; 0.245 ; 0.000         ;
-+---------------------------+-------+---------------+
+; Fast 1200mV 0C Model Setup Summary                ;
++--------------------------+--------+---------------+
+; Clock                    ; Slack  ; End Point TNS ;
++--------------------------+--------+---------------+
+; clk                      ; -1.656 ; -36.097       ;
+; div_frec:inst1|cuenta[0] ; -0.075 ; -0.150        ;
++--------------------------+--------+---------------+
+
+
++--------------------------------------------------+
+; Fast 1200mV 0C Model Hold Summary                ;
++--------------------------+-------+---------------+
+; Clock                    ; Slack ; End Point TNS ;
++--------------------------+-------+---------------+
+; div_frec:inst1|cuenta[0] ; 0.152 ; 0.000         ;
+; clk                      ; 0.189 ; 0.000         ;
++--------------------------+-------+---------------+
 
 
 -----------------------------------------
@@ -261,14 +261,14 @@ No paths to report.
 No paths to report.
 
 
-+----------------------------------------------------+
-; Fast 1200mV 0C Model Minimum Pulse Width Summary   ;
-+---------------------------+--------+---------------+
-; Clock                     ; Slack  ; End Point TNS ;
-+---------------------------+--------+---------------+
-; clk                       ; -3.000 ; -31.911       ;
-; div_frec:inst1|cuenta[24] ; -1.000 ; -3.000        ;
-+---------------------------+--------+---------------+
++---------------------------------------------------+
+; Fast 1200mV 0C Model Minimum Pulse Width Summary  ;
++--------------------------+--------+---------------+
+; Clock                    ; Slack  ; End Point TNS ;
++--------------------------+--------+---------------+
+; clk                      ; -3.000 ; -32.000       ;
+; div_frec:inst1|cuenta[0] ; -1.000 ; -3.000        ;
++--------------------------+--------+---------------+
 
 
 ----------------------------------------------
@@ -277,18 +277,18 @@ No paths to report.
 No synchronizer chains to report.
 
 
-+-----------------------------------------------------------------------------------------+
-; Multicorner Timing Analysis Summary                                                     ;
-+----------------------------+---------+-------+----------+---------+---------------------+
-; Clock                      ; Setup   ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
-+----------------------------+---------+-------+----------+---------+---------------------+
-; Worst-case Slack           ; -4.383  ; 0.152 ; N/A      ; N/A     ; -3.000              ;
-;  clk                       ; -4.383  ; 0.245 ; N/A      ; N/A     ; -3.000              ;
-;  div_frec:inst1|cuenta[24] ; -1.615  ; 0.152 ; N/A      ; N/A     ; -1.403              ;
-; Design-wide TNS            ; -81.573 ; 0.0   ; 0.0      ; 0.0     ; -46.493             ;
-;  clk                       ; -77.203 ; 0.000 ; N/A      ; N/A     ; -42.284             ;
-;  div_frec:inst1|cuenta[24] ; -4.370  ; 0.000 ; N/A      ; N/A     ; -4.209              ;
-+----------------------------+---------+-------+----------+---------+---------------------+
++----------------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                                    ;
++---------------------------+---------+-------+----------+---------+---------------------+
+; Clock                     ; Setup   ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++---------------------------+---------+-------+----------+---------+---------------------+
+; Worst-case Slack          ; -4.297  ; 0.152 ; N/A      ; N/A     ; -3.000              ;
+;  clk                      ; -4.297  ; 0.189 ; N/A      ; N/A     ; -3.000              ;
+;  div_frec:inst1|cuenta[0] ; -1.575  ; 0.152 ; N/A      ; N/A     ; -1.403              ;
+; Design-wide TNS           ; -102.8  ; 0.0   ; 0.0      ; 0.0     ; -46.493             ;
+;  clk                      ; -98.540 ; 0.000 ; N/A      ; N/A     ; -42.284             ;
+;  div_frec:inst1|cuenta[0] ; -4.260  ; 0.000 ; N/A      ; N/A     ; -4.209              ;
++---------------------------+---------+-------+----------+---------+---------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -376,27 +376,27 @@ No synchronizer chains to report.
 +--------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
 
-+---------------------------------------------------------------------------------------------------+
-; Setup Transfers                                                                                   ;
-+---------------------------+---------------------------+----------+----------+----------+----------+
-; From Clock                ; To Clock                  ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
-+---------------------------+---------------------------+----------+----------+----------+----------+
-; clk                       ; clk                       ; 753      ; 0        ; 0        ; 0        ;
-; div_frec:inst1|cuenta[24] ; clk                       ; 17       ; 17       ; 0        ; 0        ;
-; div_frec:inst1|cuenta[24] ; div_frec:inst1|cuenta[24] ; 38       ; 0        ; 0        ; 0        ;
-+---------------------------+---------------------------+----------+----------+----------+----------+
++-------------------------------------------------------------------------------------------------+
+; Setup Transfers                                                                                 ;
++--------------------------+--------------------------+----------+----------+----------+----------+
+; From Clock               ; To Clock                 ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++--------------------------+--------------------------+----------+----------+----------+----------+
+; clk                      ; clk                      ; 729      ; 0        ; 0        ; 0        ;
+; div_frec:inst1|cuenta[0] ; clk                      ; 41       ; 41       ; 0        ; 0        ;
+; div_frec:inst1|cuenta[0] ; div_frec:inst1|cuenta[0] ; 38       ; 0        ; 0        ; 0        ;
++--------------------------+--------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
 
-+---------------------------------------------------------------------------------------------------+
-; Hold Transfers                                                                                    ;
-+---------------------------+---------------------------+----------+----------+----------+----------+
-; From Clock                ; To Clock                  ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
-+---------------------------+---------------------------+----------+----------+----------+----------+
-; clk                       ; clk                       ; 753      ; 0        ; 0        ; 0        ;
-; div_frec:inst1|cuenta[24] ; clk                       ; 17       ; 17       ; 0        ; 0        ;
-; div_frec:inst1|cuenta[24] ; div_frec:inst1|cuenta[24] ; 38       ; 0        ; 0        ; 0        ;
-+---------------------------+---------------------------+----------+----------+----------+----------+
++-------------------------------------------------------------------------------------------------+
+; Hold Transfers                                                                                  ;
++--------------------------+--------------------------+----------+----------+----------+----------+
+; From Clock               ; To Clock                 ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++--------------------------+--------------------------+----------+----------+----------+----------+
+; clk                      ; clk                      ; 729      ; 0        ; 0        ; 0        ;
+; div_frec:inst1|cuenta[0] ; clk                      ; 41       ; 41       ; 0        ; 0        ;
+; div_frec:inst1|cuenta[0] ; div_frec:inst1|cuenta[0] ; 38       ; 0        ; 0        ; 0        ;
++--------------------------+--------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
 
@@ -426,14 +426,14 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +---------------------------------+-------+------+
 
 
-+----------------------------------------------------------------------------+
-; Clock Status Summary                                                       ;
-+---------------------------+---------------------------+------+-------------+
-; Target                    ; Clock                     ; Type ; Status      ;
-+---------------------------+---------------------------+------+-------------+
-; clk                       ; clk                       ; Base ; Constrained ;
-; div_frec:inst1|cuenta[24] ; div_frec:inst1|cuenta[24] ; Base ; Constrained ;
-+---------------------------+---------------------------+------+-------------+
++--------------------------------------------------------------------------+
+; Clock Status Summary                                                     ;
++--------------------------+--------------------------+------+-------------+
+; Target                   ; Clock                    ; Type ; Status      ;
++--------------------------+--------------------------+------+-------------+
+; clk                      ; clk                      ; Base ; Constrained ;
+; div_frec:inst1|cuenta[0] ; div_frec:inst1|cuenta[0] ; Base ; Constrained ;
++--------------------------+--------------------------+------+-------------+
 
 
 +---------------------------------------------------------------------------------------------------+
@@ -497,18 +497,18 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +--------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
-    Info: Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
-    Info: Processing started: Fri Sep 29 07:12:18 2023
+    Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+    Info: Processing started: Thu Oct 05 23:25:08 2023
 Info: Command: quartus_sta practica4 -c practica4
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'practica4.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
 Info (332105): Deriving Clocks
-    Info (332105): create_clock -period 1.000 -name div_frec:inst1|cuenta[24] div_frec:inst1|cuenta[24]
+    Info (332105): create_clock -period 1.000 -name div_frec:inst1|cuenta[0] div_frec:inst1|cuenta[0]
     Info (332105): create_clock -period 1.000 -name clk clk
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
@@ -516,71 +516,71 @@ Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1200mV 85C Model
 Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -4.383
+Info (332146): Worst-case setup slack is -4.297
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -4.383             -77.203 clk 
-    Info (332119):    -1.615              -4.370 div_frec:inst1|cuenta[24] 
-Info (332146): Worst-case hold slack is 0.347
+    Info (332119):    -4.297             -98.540 clk 
+    Info (332119):    -1.575              -4.260 div_frec:inst1|cuenta[0] 
+Info (332146): Worst-case hold slack is 0.348
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.347               0.000 div_frec:inst1|cuenta[24] 
-    Info (332119):     0.638               0.000 clk 
+    Info (332119):     0.348               0.000 div_frec:inst1|cuenta[0] 
+    Info (332119):     0.515               0.000 clk 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):    -3.000             -42.284 clk 
-    Info (332119):    -1.403              -4.209 div_frec:inst1|cuenta[24] 
+    Info (332119):    -1.403              -4.209 div_frec:inst1|cuenta[0] 
 Info: Analyzing Slow 1200mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -3.991
+Info (332146): Worst-case setup slack is -3.882
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.991             -68.552 clk 
-    Info (332119):    -1.397              -3.739 div_frec:inst1|cuenta[24] 
+    Info (332119):    -3.882             -87.682 clk 
+    Info (332119):    -1.365              -3.679 div_frec:inst1|cuenta[0] 
 Info (332146): Worst-case hold slack is 0.311
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.311               0.000 div_frec:inst1|cuenta[24] 
-    Info (332119):     0.592               0.000 clk 
+    Info (332119):     0.311               0.000 div_frec:inst1|cuenta[0] 
+    Info (332119):     0.460               0.000 clk 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):    -3.000             -42.284 clk 
-    Info (332119):    -1.403              -4.209 div_frec:inst1|cuenta[24] 
+    Info (332119):    -1.403              -4.209 div_frec:inst1|cuenta[0] 
 Info: Analyzing Fast 1200mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -1.351
+Info (332146): Worst-case setup slack is -1.656
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -1.351             -19.771 clk 
-    Info (332119):    -0.095              -0.190 div_frec:inst1|cuenta[24] 
+    Info (332119):    -1.656             -36.097 clk 
+    Info (332119):    -0.075              -0.150 div_frec:inst1|cuenta[0] 
 Info (332146): Worst-case hold slack is 0.152
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.152               0.000 div_frec:inst1|cuenta[24] 
-    Info (332119):     0.245               0.000 clk 
+    Info (332119):     0.152               0.000 div_frec:inst1|cuenta[0] 
+    Info (332119):     0.189               0.000 clk 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.000             -31.911 clk 
-    Info (332119):    -1.000              -3.000 div_frec:inst1|cuenta[24] 
+    Info (332119):    -3.000             -32.000 clk 
+    Info (332119):    -1.000              -3.000 div_frec:inst1|cuenta[0] 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4811 megabytes
-    Info: Processing ended: Fri Sep 29 07:12:21 2023
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Peak virtual memory: 4821 megabytes
+    Info: Processing ended: Thu Oct 05 23:25:12 2023
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:02
 
 

@@ -1,0 +1,307 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/proyectosQuartus/PracticasOAC/Practica4/simulation/modelsim
+Ediv_frec
+Z1 w1696557015
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z3 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z6 8D:/proyectosQuartus/PracticasOAC/Practica4/div_frec.vhd
+Z7 FD:/proyectosQuartus/PracticasOAC/Practica4/div_frec.vhd
+l0
+L6
+V6@V[bSIZ0dn4Xa2bgiH452
+!s100 QE62AN12lWaIgM?PER8hH3
+Z8 OV;C;10.5b;63
+31
+Z9 !s110 1696569371
+!i10b 1
+Z10 !s108 1696569371.000000
+Z11 !s90 -reportprogress|300|-93|-work|work|D:/proyectosQuartus/PracticasOAC/Practica4/div_frec.vhd|
+Z12 !s107 D:/proyectosQuartus/PracticasOAC/Practica4/div_frec.vhd|
+!i113 1
+Z13 o-93 -work work
+Z14 tExplicit 1 CvgOpt 0
+Abehavioral
+R2
+R3
+R4
+R5
+DEx4 work 8 div_frec 0 22 6@V[bSIZ0dn4Xa2bgiH452
+l14
+L13
+VBaWiOA>z4JWdfnZZ7AfzJ1
+!s100 i9>MKlgG;Wgdd_mJMC9Pj0
+R8
+31
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Edivisor_datos
+Z15 w1695445542
+R2
+R3
+R4
+R5
+R0
+Z16 8D:/proyectosQuartus/PracticasOAC/Practica4/divisor_datos.vhd
+Z17 FD:/proyectosQuartus/PracticasOAC/Practica4/divisor_datos.vhd
+l0
+L7
+V`KXzemTBTS=CY9bn]MVKI0
+!s100 CPB8g4]fCXQShBjU1<<z>0
+R8
+31
+R9
+!i10b 1
+R10
+Z18 !s90 -reportprogress|300|-93|-work|work|D:/proyectosQuartus/PracticasOAC/Practica4/divisor_datos.vhd|
+Z19 !s107 D:/proyectosQuartus/PracticasOAC/Practica4/divisor_datos.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R2
+R3
+R4
+R5
+DEx4 work 13 divisor_datos 0 22 `KXzemTBTS=CY9bn]MVKI0
+l19
+L18
+VW@DhI;G?Yn33]JZBRH5^C0
+!s100 giXM^6]mUA;<<Oa;<dWW93
+R8
+31
+R9
+!i10b 1
+R10
+R18
+R19
+!i113 1
+R13
+R14
+Ememoria
+Z20 w1695507245
+R2
+R3
+R4
+R5
+R0
+Z21 8D:/proyectosQuartus/PracticasOAC/Practica4/memoria.vhd
+Z22 FD:/proyectosQuartus/PracticasOAC/Practica4/memoria.vhd
+l0
+L7
+VFOd^efkAghMI2gkLL>J;R0
+!s100 8N`ZQIX;k]?c>feed?a;f1
+R8
+31
+R9
+!i10b 1
+Z23 !s108 1696569370.000000
+Z24 !s90 -reportprogress|300|-93|-work|work|D:/proyectosQuartus/PracticasOAC/Practica4/memoria.vhd|
+Z25 !s107 D:/proyectosQuartus/PracticasOAC/Practica4/memoria.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R2
+R3
+R4
+R5
+DEx4 work 7 memoria 0 22 FOd^efkAghMI2gkLL>J;R0
+l17
+L14
+VYRjaF@GagkVUXeI11Y1zO2
+!s100 ECIo]_C]MgXDC?FMN0b5d1
+R8
+31
+R9
+!i10b 1
+R23
+R24
+R25
+!i113 1
+R13
+R14
+Emux2
+Z26 w1695445466
+R2
+R3
+R4
+R5
+R0
+Z27 8D:/proyectosQuartus/PracticasOAC/Practica4/mux2.vhd
+Z28 FD:/proyectosQuartus/PracticasOAC/Practica4/mux2.vhd
+l0
+L6
+V:9IQ5Z2menfEDnZn^V0@e1
+!s100 I8_8c@>HBfJK]0DVGC_6i3
+R8
+31
+R9
+!i10b 1
+R10
+Z29 !s90 -reportprogress|300|-93|-work|work|D:/proyectosQuartus/PracticasOAC/Practica4/mux2.vhd|
+Z30 !s107 D:/proyectosQuartus/PracticasOAC/Practica4/mux2.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R2
+R3
+R4
+R5
+DEx4 work 4 mux2 0 22 :9IQ5Z2menfEDnZn^V0@e1
+l16
+L15
+VmR30Pj>Y[I9iE?Xf7h3l:0
+!s100 3g=h?PSElF05;:l^0FJf_2
+R8
+31
+R9
+!i10b 1
+R10
+R29
+R30
+!i113 1
+R13
+R14
+Emux2_1
+Z31 w1695445467
+R2
+R3
+R4
+R5
+R0
+Z32 8D:/proyectosQuartus/PracticasOAC/Practica4/mux2_1.vhd
+Z33 FD:/proyectosQuartus/PracticasOAC/Practica4/mux2_1.vhd
+l0
+L7
+V]zmQL1PhkLz0aFXjRGbBV0
+!s100 iU?X4d8^BEQA9MdeYcGAe3
+R8
+31
+R9
+!i10b 1
+R10
+Z34 !s90 -reportprogress|300|-93|-work|work|D:/proyectosQuartus/PracticasOAC/Practica4/mux2_1.vhd|
+Z35 !s107 D:/proyectosQuartus/PracticasOAC/Practica4/mux2_1.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R2
+R3
+R4
+R5
+DEx4 work 6 mux2_1 0 22 ]zmQL1PhkLz0aFXjRGbBV0
+l17
+L16
+V9z1T]_Ak7:eHBVBCUPjHQ2
+!s100 g;8[=Cg4>C8laOP`b>NKW1
+R8
+31
+R9
+!i10b 1
+R10
+R34
+R35
+!i113 1
+R13
+R14
+Emux4
+Z36 w1695394749
+R2
+R3
+R4
+R5
+R0
+Z37 8D:/proyectosQuartus/PracticasOAC/Practica4/mux4.vhd
+Z38 FD:/proyectosQuartus/PracticasOAC/Practica4/mux4.vhd
+l0
+L6
+V?8[WlbDYD@oRi[1fj:L4M1
+!s100 _6RUcn>A0d_AjL0`S6AYI0
+R8
+31
+R9
+!i10b 1
+R10
+Z39 !s90 -reportprogress|300|-93|-work|work|D:/proyectosQuartus/PracticasOAC/Practica4/mux4.vhd|
+Z40 !s107 D:/proyectosQuartus/PracticasOAC/Practica4/mux4.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R2
+R3
+R4
+R5
+DEx4 work 4 mux4 0 22 ?8[WlbDYD@oRi[1fj:L4M1
+l19
+L18
+VMKaU?hJbjc6P0GEe25;@]2
+!s100 5oT?GM6m=eRQCFVkP33Dg1
+R8
+31
+R9
+!i10b 1
+R10
+R39
+R40
+!i113 1
+R13
+R14
+Eregister2
+Z41 w1695392494
+R4
+R5
+R0
+Z42 8D:/proyectosQuartus/PracticasOAC/Practica4/register2.vhd
+Z43 FD:/proyectosQuartus/PracticasOAC/Practica4/register2.vhd
+l0
+L4
+VRi72eV]<^3>?N23kZIGAb0
+!s100 Y<V`R_MglfUR^aTVKz2[l1
+R8
+31
+R9
+!i10b 1
+R10
+Z44 !s90 -reportprogress|300|-93|-work|work|D:/proyectosQuartus/PracticasOAC/Practica4/register2.vhd|
+Z45 !s107 D:/proyectosQuartus/PracticasOAC/Practica4/register2.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R4
+R5
+DEx4 work 9 register2 0 22 Ri72eV]<^3>?N23kZIGAb0
+l15
+L13
+Ve:?2mM9D7ak9N@G@4NeZ;3
+!s100 ]a?20AR4@PFD?`?30N?jP3
+R8
+31
+R9
+!i10b 1
+R10
+R44
+R45
+!i113 1
+R13
+R14

@@ -1,0 +1,210 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/migue/Desktop/FI-UNAM/Semestre_9.2024-1/Organizacion y Arquitectura de Computadoras/Laboratorio/Practica5/Practica5/simulation/modelsim
+Palt_dspbuilder_package
+Z1 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 2
+Z4 w1676436576
+R0
+Z5 8c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/alt_dspbuilder_package.vhd
+Z6 Fc:/intelfpga_lite/22.1std/quartus/eda/sim_lib/alt_dspbuilder_package.vhd
+l0
+L25 1
+VIPGc8LUF1gKhCQkln2NLh2
+!s100 nCg0@VTmTP]Zk2zjJHWZ`1
+Z7 OV;C;2020.1;71
+31
+b1
+Z8 !s110 1696569910
+!i10b 1
+Z9 !s108 1696569910.000000
+Z10 !s90 -reportprogress|300|-93|-work|altera|c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/alt_dspbuilder_package.vhd|
+Z11 !s107 c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/alt_dspbuilder_package.vhd|
+!i113 1
+Z12 o-93 -work altera
+Z13 tExplicit 1 CvgOpt 0
+Bbody
+DPx4 work 22 alt_dspbuilder_package 0 22 IPGc8LUF1gKhCQkln2NLh2
+R1
+R2
+R3
+!i122 2
+l0
+L1471 1
+VY8WoD9e34P]`OQ?Pjij^i0
+!s100 HgJ;==E:Pl?6FWHfPn_Y72
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Paltera_europa_support_lib
+R1
+Z14 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z15 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R2
+R3
+!i122 3
+R4
+R0
+Z16 8c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_europa_support_lib.vhd
+Z17 Fc:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_europa_support_lib.vhd
+l0
+L36 1
+VOPDdUe>Sn@4P:TW4IJ3B12
+!s100 jz5V:WRLe2S5KhD9kNfJM1
+R7
+31
+b1
+Z18 !s110 1696569911
+!i10b 1
+Z19 !s108 1696569911.000000
+Z20 !s90 -reportprogress|300|-93|-work|altera|c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_europa_support_lib.vhd|
+Z21 !s107 c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_europa_support_lib.vhd|
+!i113 1
+R12
+R13
+Bbody
+DPx4 work 25 altera_europa_support_lib 0 22 OPDdUe>Sn@4P:TW4IJ3B12
+R1
+R14
+R15
+R2
+R3
+!i122 3
+l0
+L133 1
+V]b09F6]TAJ]H1i947XoFX2
+!s100 MaGUMBb1:iN?Sn;kDT5hW1
+R7
+31
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 1
+R12
+R13
+Paltera_primitives_components
+Z22 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+DPx4 work 11 dffeas_pack 0 22 ZQ]VGMHaJ[GMZ@f@b6[AU2
+Z23 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+R2
+R3
+!i122 4
+Z24 w1676436575
+R0
+Z25 8c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives_components.vhd
+Z26 Fc:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives_components.vhd
+l0
+L47 1
+V18Ti78zfmJ`i`agjOM[]Q2
+!s100 5i^l^=YQ@;5i`1cbe9n9?0
+R7
+31
+Z27 !s110 1696569912
+!i10b 1
+Z28 !s108 1696569912.000000
+Z29 !s90 -reportprogress|300|-93|-work|altera|c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives_components.vhd|
+!s107 c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives_components.vhd|
+!i113 1
+R12
+R13
+Paltera_standard_functions
+!i122 1
+R4
+R0
+Z30 8c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_standard_functions.vhd
+Z31 Fc:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_standard_functions.vhd
+l0
+L19 1
+V?X33=99z2iZh?R[A=[4Ik3
+!s100 =Y?Hhj:^X50RUH=i3@K?;3
+R7
+31
+b1
+Z32 !s110 1696569909
+!i10b 1
+Z33 !s108 1696569909.000000
+Z34 !s90 -reportprogress|300|-93|-work|altera|c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_standard_functions.vhd|
+Z35 !s107 c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_standard_functions.vhd|
+!i113 1
+R12
+R13
+Bbody
+DPx4 work 25 altera_standard_functions 0 22 ?X33=99z2iZh?R[A=[4Ik3
+!i122 1
+l0
+Z36 L26 1
+VBDo`JJK;[2ZJQ4?SE]Z6F3
+!s100 ;jPK2YMZzP5D]^o^lVMVk1
+R7
+31
+R32
+!i10b 1
+R33
+R34
+R35
+!i113 1
+R12
+R13
+Paltera_syn_attributes
+!i122 0
+R24
+R0
+8c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_syn_attributes.vhd
+Fc:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_syn_attributes.vhd
+l0
+L33 1
+VFbQCGNeiUZm<YNoMejh[K3
+!s100 >=6W>R7:J_3D;LbQ[QhOE0
+R7
+31
+!s110 1696569907
+!i10b 1
+!s108 1696569907.000000
+!s90 -reportprogress|300|-93|-work|altera|c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_syn_attributes.vhd|
+!s107 c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_syn_attributes.vhd|
+!i113 1
+R12
+R13
+Pdffeas_pack
+R22
+R23
+R2
+R3
+!i122 4
+R24
+R0
+R25
+R26
+l0
+R36
+VZQ]VGMHaJ[GMZ@f@b6[AU2
+!s100 O@LjH7a0KDnMVoa2jaR?>2
+R7
+31
+R27
+!i10b 1
+R28
+R29
+Z37 !s107 c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives_components.vhd|
+!i113 1
+R12
+R13

@@ -1,6 +1,6 @@
 Analysis & Synthesis report for practica4
-Fri Sep 29 07:11:58 2023
-Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
+Thu Oct 05 23:24:39 2023
+Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
 ---------------------
@@ -23,7 +23,7 @@ Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2023  Intel Corporation. All rights reserved.
+Copyright (C) 2019  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -40,26 +40,26 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+-------------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                        ;
-+------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Sep 29 07:11:58 2023          ;
-; Quartus Prime Version              ; 22.1std.1 Build 917 02/14/2023 SC Lite Edition ;
-; Revision Name                      ; practica4                                      ;
-; Top-level Entity Name              ; practica4                                      ;
-; Family                             ; MAX 10                                         ;
-; Total logic elements               ; 66                                             ;
-;     Total combinational functions  ; 66                                             ;
-;     Dedicated logic registers      ; 31                                             ;
-; Total registers                    ; 31                                             ;
-; Total pins                         ; 13                                             ;
-; Total virtual pins                 ; 0                                              ;
-; Total memory bits                  ; 0                                              ;
-; Embedded Multiplier 9-bit elements ; 0                                              ;
-; Total PLLs                         ; 0                                              ;
-; UFM blocks                         ; 0                                              ;
-; ADC blocks                         ; 0                                              ;
-+------------------------------------+------------------------------------------------+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Thu Oct 05 23:24:39 2023       ;
+; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
+; Revision Name                      ; practica4                                   ;
+; Top-level Entity Name              ; practica4                                   ;
+; Family                             ; MAX 10                                      ;
+; Total logic elements               ; 65                                          ;
+;     Total combinational functions  ; 65                                          ;
+;     Dedicated logic registers      ; 31                                          ;
+; Total registers                    ; 31                                          ;
+; Total pins                         ; 13                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
+; UFM blocks                         ; 0                                           ;
+; ADC blocks                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------+
@@ -154,31 +154,31 @@ https://fpgasoftware.intel.com/eula.
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
 ; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 2           ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                             ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                                                                   ; Library ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; memoria.vhd                      ; yes             ; User VHDL File                     ; C:/Users/migue/Desktop/FI-UNAM/Semestre_9.2024-1/Organizacion y Arquitectura de Computadoras/Laboratorio/Practica4/Practica4/memoria.vhd       ;         ;
-; practica4.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/migue/Desktop/FI-UNAM/Semestre_9.2024-1/Organizacion y Arquitectura de Computadoras/Laboratorio/Practica4/Practica4/practica4.bdf     ;         ;
-; div_frec.vhd                     ; yes             ; User VHDL File                     ; C:/Users/migue/Desktop/FI-UNAM/Semestre_9.2024-1/Organizacion y Arquitectura de Computadoras/Laboratorio/Practica4/Practica4/div_frec.vhd      ;         ;
-; register2.vhd                    ; yes             ; User VHDL File                     ; C:/Users/migue/Desktop/FI-UNAM/Semestre_9.2024-1/Organizacion y Arquitectura de Computadoras/Laboratorio/Practica4/Practica4/register2.vhd     ;         ;
-; divisor_datos.vhd                ; yes             ; User VHDL File                     ; C:/Users/migue/Desktop/FI-UNAM/Semestre_9.2024-1/Organizacion y Arquitectura de Computadoras/Laboratorio/Practica4/Practica4/divisor_datos.vhd ;         ;
-; mux4.vhd                         ; yes             ; User VHDL File                     ; C:/Users/migue/Desktop/FI-UNAM/Semestre_9.2024-1/Organizacion y Arquitectura de Computadoras/Laboratorio/Practica4/Practica4/mux4.vhd          ;         ;
-; mux2.vhd                         ; yes             ; User VHDL File                     ; C:/Users/migue/Desktop/FI-UNAM/Semestre_9.2024-1/Organizacion y Arquitectura de Computadoras/Laboratorio/Practica4/Practica4/mux2.vhd          ;         ;
-; mux2_1.vhd                       ; yes             ; User VHDL File                     ; C:/Users/migue/Desktop/FI-UNAM/Semestre_9.2024-1/Organizacion y Arquitectura de Computadoras/Laboratorio/Practica4/Practica4/mux2_1.vhd        ;         ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                           ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                 ; Library ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------+---------+
+; memoria.vhd                      ; yes             ; User VHDL File                     ; D:/proyectosQuartus/PracticasOAC/Practica4/memoria.vhd       ;         ;
+; practica4.bdf                    ; yes             ; User Block Diagram/Schematic File  ; D:/proyectosQuartus/PracticasOAC/Practica4/practica4.bdf     ;         ;
+; div_frec.vhd                     ; yes             ; User VHDL File                     ; D:/proyectosQuartus/PracticasOAC/Practica4/div_frec.vhd      ;         ;
+; register2.vhd                    ; yes             ; User VHDL File                     ; D:/proyectosQuartus/PracticasOAC/Practica4/register2.vhd     ;         ;
+; divisor_datos.vhd                ; yes             ; User VHDL File                     ; D:/proyectosQuartus/PracticasOAC/Practica4/divisor_datos.vhd ;         ;
+; mux4.vhd                         ; yes             ; User VHDL File                     ; D:/proyectosQuartus/PracticasOAC/Practica4/mux4.vhd          ;         ;
+; mux2.vhd                         ; yes             ; User VHDL File                     ; D:/proyectosQuartus/PracticasOAC/Practica4/mux2.vhd          ;         ;
+; mux2_1.vhd                       ; yes             ; User VHDL File                     ; D:/proyectosQuartus/PracticasOAC/Practica4/mux2_1.vhd        ;         ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -186,16 +186,16 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 66        ;
+; Estimated Total logic elements              ; 65        ;
 ;                                             ;           ;
-; Total combinational functions               ; 66        ;
+; Total combinational functions               ; 65        ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 22        ;
+;     -- 4 input functions                    ; 14        ;
 ;     -- 3 input functions                    ; 8         ;
-;     -- <=2 input functions                  ; 36        ;
+;     -- <=2 input functions                  ; 43        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 39        ;
+;     -- normal mode                          ; 38        ;
 ;     -- arithmetic mode                      ; 27        ;
 ;                                             ;           ;
 ; Total registers                             ; 31        ;
@@ -208,8 +208,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
 ; Maximum fan-out                             ; 28        ;
-; Total fan-out                               ; 272       ;
-; Average fan-out                             ; 2.21      ;
+; Total fan-out                               ; 254       ;
+; Average fan-out                             ; 2.08      ;
 +---------------------------------------------+-----------+
 
 
@@ -218,8 +218,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name        ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------+-------------+--------------+
-; |practica4                 ; 66 (0)              ; 31 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 13   ; 0            ; 0          ; |practica4                 ; practica4   ; work         ;
-;    |div_frec:inst1|        ; 51 (51)             ; 28 (28)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |practica4|div_frec:inst1  ; div_frec    ; work         ;
+; |practica4                 ; 65 (0)              ; 31 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 13   ; 0            ; 0          ; |practica4                 ; practica4   ; work         ;
+;    |div_frec:inst1|        ; 50 (50)             ; 28 (28)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |practica4|div_frec:inst1  ; div_frec    ; work         ;
 ;    |memoria:inst|          ; 5 (5)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |practica4|memoria:inst    ; memoria     ; work         ;
 ;    |mux2:inst8|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |practica4|mux2:inst8      ; mux2        ; work         ;
 ;    |mux2_1:inst9|          ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |practica4|mux2_1:inst9    ; mux2_1      ; work         ;
@@ -254,17 +254,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;     CLR               ; 1                           ;
 ;     CLR SLD           ; 2                           ;
 ;     plain             ; 28                          ;
-; cycloneiii_lcell_comb ; 66                          ;
+; cycloneiii_lcell_comb ; 65                          ;
 ;     arith             ; 27                          ;
 ;         2 data inputs ; 27                          ;
-;     normal            ; 39                          ;
+;     normal            ; 38                          ;
 ;         1 data inputs ; 1                           ;
-;         2 data inputs ; 8                           ;
+;         2 data inputs ; 15                          ;
 ;         3 data inputs ; 8                           ;
-;         4 data inputs ; 22                          ;
+;         4 data inputs ; 14                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 4.50                        ;
-; Average LUT depth     ; 3.36                        ;
+; Average LUT depth     ; 3.40                        ;
 +-----------------------+-----------------------------+
 
 
@@ -273,7 +273,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -282,70 +282,70 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
-    Info: Processing started: Fri Sep 29 07:11:41 2023
+    Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+    Info: Processing started: Thu Oct 05 23:24:23 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off practica4 -c practica4
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file prueba.vhd
-    Info (12022): Found design unit 1: concatenador_datos-Behavioral File: C:/Users/migue/Desktop/FI-UNAM/Semestre_9.2024-1/Organizacion y Arquitectura de Computadoras/Laboratorio/Practica4/Practica4/prueba.vhd Line: 17
-    Info (12023): Found entity 1: concatenador_datos File: C:/Users/migue/Desktop/FI-UNAM/Semestre_9.2024-1/Organizacion y Arquitectura de Computadoras/Laboratorio/Practica4/Practica4/prueba.vhd Line: 6
+    Info (12022): Found design unit 1: concatenador_datos-Behavioral File: D:/proyectosQuartus/PracticasOAC/Practica4/prueba.vhd Line: 17
+    Info (12023): Found entity 1: concatenador_datos File: D:/proyectosQuartus/PracticasOAC/Practica4/prueba.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file memoria.vhd
-    Info (12022): Found design unit 1: memoria-Behavioral File: C:/Users/migue/Desktop/FI-UNAM/Semestre_9.2024-1/Organizacion y Arquitectura de Computadoras/Laboratorio/Practica4/Practica4/memoria.vhd Line: 14
-    Info (12023): Found entity 1: memoria File: C:/Users/migue/Desktop/FI-UNAM/Semestre_9.2024-1/Organizacion y Arquitectura de Computadoras/Laboratorio/Practica4/Practica4/memoria.vhd Line: 7
+    Info (12022): Found design unit 1: memoria-Behavioral File: D:/proyectosQuartus/PracticasOAC/Practica4/memoria.vhd Line: 14
+    Info (12023): Found entity 1: memoria File: D:/proyectosQuartus/PracticasOAC/Practica4/memoria.vhd Line: 7
 Info (12021): Found 1 design units, including 1 entities, in source file practica4.bdf
     Info (12023): Found entity 1: practica4
 Info (12021): Found 2 design units, including 1 entities, in source file div_frec.vhd
-    Info (12022): Found design unit 1: div_frec-Behavioral File: C:/Users/migue/Desktop/FI-UNAM/Semestre_9.2024-1/Organizacion y Arquitectura de Computadoras/Laboratorio/Practica4/Practica4/div_frec.vhd Line: 13
-    Info (12023): Found entity 1: div_frec File: C:/Users/migue/Desktop/FI-UNAM/Semestre_9.2024-1/Organizacion y Arquitectura de Computadoras/Laboratorio/Practica4/Practica4/div_frec.vhd Line: 6
+    Info (12022): Found design unit 1: div_frec-Behavioral File: D:/proyectosQuartus/PracticasOAC/Practica4/div_frec.vhd Line: 13
+    Info (12023): Found entity 1: div_frec File: D:/proyectosQuartus/PracticasOAC/Practica4/div_frec.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file register2.vhd
-    Info (12022): Found design unit 1: register2-Behavioral File: C:/Users/migue/Desktop/FI-UNAM/Semestre_9.2024-1/Organizacion y Arquitectura de Computadoras/Laboratorio/Practica4/Practica4/register2.vhd Line: 13
-    Info (12023): Found entity 1: register2 File: C:/Users/migue/Desktop/FI-UNAM/Semestre_9.2024-1/Organizacion y Arquitectura de Computadoras/Laboratorio/Practica4/Practica4/register2.vhd Line: 4
+    Info (12022): Found design unit 1: register2-Behavioral File: D:/proyectosQuartus/PracticasOAC/Practica4/register2.vhd Line: 13
+    Info (12023): Found entity 1: register2 File: D:/proyectosQuartus/PracticasOAC/Practica4/register2.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file divisor_datos.vhd
-    Info (12022): Found design unit 1: divisor_datos-Behavioral File: C:/Users/migue/Desktop/FI-UNAM/Semestre_9.2024-1/Organizacion y Arquitectura de Computadoras/Laboratorio/Practica4/Practica4/divisor_datos.vhd Line: 18
-    Info (12023): Found entity 1: divisor_datos File: C:/Users/migue/Desktop/FI-UNAM/Semestre_9.2024-1/Organizacion y Arquitectura de Computadoras/Laboratorio/Practica4/Practica4/divisor_datos.vhd Line: 7
+    Info (12022): Found design unit 1: divisor_datos-Behavioral File: D:/proyectosQuartus/PracticasOAC/Practica4/divisor_datos.vhd Line: 18
+    Info (12023): Found entity 1: divisor_datos File: D:/proyectosQuartus/PracticasOAC/Practica4/divisor_datos.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file mux4.vhd
-    Info (12022): Found design unit 1: mux4-Behavioral File: C:/Users/migue/Desktop/FI-UNAM/Semestre_9.2024-1/Organizacion y Arquitectura de Computadoras/Laboratorio/Practica4/Practica4/mux4.vhd Line: 18
-    Info (12023): Found entity 1: mux4 File: C:/Users/migue/Desktop/FI-UNAM/Semestre_9.2024-1/Organizacion y Arquitectura de Computadoras/Laboratorio/Practica4/Practica4/mux4.vhd Line: 6
+    Info (12022): Found design unit 1: mux4-Behavioral File: D:/proyectosQuartus/PracticasOAC/Practica4/mux4.vhd Line: 18
+    Info (12023): Found entity 1: mux4 File: D:/proyectosQuartus/PracticasOAC/Practica4/mux4.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file mux2.vhd
-    Info (12022): Found design unit 1: mux2-Behavioral File: C:/Users/migue/Desktop/FI-UNAM/Semestre_9.2024-1/Organizacion y Arquitectura de Computadoras/Laboratorio/Practica4/Practica4/mux2.vhd Line: 15
-    Info (12023): Found entity 1: mux2 File: C:/Users/migue/Desktop/FI-UNAM/Semestre_9.2024-1/Organizacion y Arquitectura de Computadoras/Laboratorio/Practica4/Practica4/mux2.vhd Line: 6
+    Info (12022): Found design unit 1: mux2-Behavioral File: D:/proyectosQuartus/PracticasOAC/Practica4/mux2.vhd Line: 15
+    Info (12023): Found entity 1: mux2 File: D:/proyectosQuartus/PracticasOAC/Practica4/mux2.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file mux2_1.vhd
-    Info (12022): Found design unit 1: mux2_1-Behavioral File: C:/Users/migue/Desktop/FI-UNAM/Semestre_9.2024-1/Organizacion y Arquitectura de Computadoras/Laboratorio/Practica4/Practica4/mux2_1.vhd Line: 16
-    Info (12023): Found entity 1: mux2_1 File: C:/Users/migue/Desktop/FI-UNAM/Semestre_9.2024-1/Organizacion y Arquitectura de Computadoras/Laboratorio/Practica4/Practica4/mux2_1.vhd Line: 7
+    Info (12022): Found design unit 1: mux2_1-Behavioral File: D:/proyectosQuartus/PracticasOAC/Practica4/mux2_1.vhd Line: 16
+    Info (12023): Found entity 1: mux2_1 File: D:/proyectosQuartus/PracticasOAC/Practica4/mux2_1.vhd Line: 7
 Info (12127): Elaborating entity "practica4" for the top level hierarchy
 Info (12128): Elaborating entity "register2" for hierarchy "register2:inst2"
 Info (12128): Elaborating entity "div_frec" for hierarchy "div_frec:inst1"
 Info (12128): Elaborating entity "mux2" for hierarchy "mux2:inst8"
-Warning (10631): VHDL Process Statement warning at mux2.vhd(18): inferring latch(es) for signal or variable "O", which holds its previous value in one or more paths through the process File: C:/Users/migue/Desktop/FI-UNAM/Semestre_9.2024-1/Organizacion y Arquitectura de Computadoras/Laboratorio/Practica4/Practica4/mux2.vhd Line: 18
-Info (10041): Inferred latch for "O[0]" at mux2.vhd(18) File: C:/Users/migue/Desktop/FI-UNAM/Semestre_9.2024-1/Organizacion y Arquitectura de Computadoras/Laboratorio/Practica4/Practica4/mux2.vhd Line: 18
-Info (10041): Inferred latch for "O[1]" at mux2.vhd(18) File: C:/Users/migue/Desktop/FI-UNAM/Semestre_9.2024-1/Organizacion y Arquitectura de Computadoras/Laboratorio/Practica4/Practica4/mux2.vhd Line: 18
-Info (10041): Inferred latch for "O[2]" at mux2.vhd(18) File: C:/Users/migue/Desktop/FI-UNAM/Semestre_9.2024-1/Organizacion y Arquitectura de Computadoras/Laboratorio/Practica4/Practica4/mux2.vhd Line: 18
+Warning (10631): VHDL Process Statement warning at mux2.vhd(18): inferring latch(es) for signal or variable "O", which holds its previous value in one or more paths through the process File: D:/proyectosQuartus/PracticasOAC/Practica4/mux2.vhd Line: 18
+Info (10041): Inferred latch for "O[0]" at mux2.vhd(18) File: D:/proyectosQuartus/PracticasOAC/Practica4/mux2.vhd Line: 18
+Info (10041): Inferred latch for "O[1]" at mux2.vhd(18) File: D:/proyectosQuartus/PracticasOAC/Practica4/mux2.vhd Line: 18
+Info (10041): Inferred latch for "O[2]" at mux2.vhd(18) File: D:/proyectosQuartus/PracticasOAC/Practica4/mux2.vhd Line: 18
 Info (12128): Elaborating entity "mux4" for hierarchy "mux4:inst10"
-Warning (10631): VHDL Process Statement warning at mux4.vhd(21): inferring latch(es) for signal or variable "O", which holds its previous value in one or more paths through the process File: C:/Users/migue/Desktop/FI-UNAM/Semestre_9.2024-1/Organizacion y Arquitectura de Computadoras/Laboratorio/Practica4/Practica4/mux4.vhd Line: 21
-Info (10041): Inferred latch for "O" at mux4.vhd(21) File: C:/Users/migue/Desktop/FI-UNAM/Semestre_9.2024-1/Organizacion y Arquitectura de Computadoras/Laboratorio/Practica4/Practica4/mux4.vhd Line: 21
+Warning (10631): VHDL Process Statement warning at mux4.vhd(21): inferring latch(es) for signal or variable "O", which holds its previous value in one or more paths through the process File: D:/proyectosQuartus/PracticasOAC/Practica4/mux4.vhd Line: 21
+Info (10041): Inferred latch for "O" at mux4.vhd(21) File: D:/proyectosQuartus/PracticasOAC/Practica4/mux4.vhd Line: 21
 Info (12128): Elaborating entity "divisor_datos" for hierarchy "divisor_datos:inst5"
 Info (12128): Elaborating entity "memoria" for hierarchy "memoria:inst"
-Warning (10492): VHDL Process Statement warning at memoria.vhd(29): signal "internal_mem" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/migue/Desktop/FI-UNAM/Semestre_9.2024-1/Organizacion y Arquitectura de Computadoras/Laboratorio/Practica4/Practica4/memoria.vhd Line: 29
+Warning (10492): VHDL Process Statement warning at memoria.vhd(29): signal "internal_mem" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/proyectosQuartus/PracticasOAC/Practica4/memoria.vhd Line: 29
 Info (12128): Elaborating entity "mux2_1" for hierarchy "mux2_1:inst9"
-Warning (10631): VHDL Process Statement warning at mux2_1.vhd(19): inferring latch(es) for signal or variable "O", which holds its previous value in one or more paths through the process File: C:/Users/migue/Desktop/FI-UNAM/Semestre_9.2024-1/Organizacion y Arquitectura de Computadoras/Laboratorio/Practica4/Practica4/mux2_1.vhd Line: 19
-Info (10041): Inferred latch for "O[0]" at mux2_1.vhd(19) File: C:/Users/migue/Desktop/FI-UNAM/Semestre_9.2024-1/Organizacion y Arquitectura de Computadoras/Laboratorio/Practica4/Practica4/mux2_1.vhd Line: 19
-Info (10041): Inferred latch for "O[1]" at mux2_1.vhd(19) File: C:/Users/migue/Desktop/FI-UNAM/Semestre_9.2024-1/Organizacion y Arquitectura de Computadoras/Laboratorio/Practica4/Practica4/mux2_1.vhd Line: 19
-Info (10041): Inferred latch for "O[2]" at mux2_1.vhd(19) File: C:/Users/migue/Desktop/FI-UNAM/Semestre_9.2024-1/Organizacion y Arquitectura de Computadoras/Laboratorio/Practica4/Practica4/mux2_1.vhd Line: 19
-Info (10041): Inferred latch for "O[3]" at mux2_1.vhd(19) File: C:/Users/migue/Desktop/FI-UNAM/Semestre_9.2024-1/Organizacion y Arquitectura de Computadoras/Laboratorio/Practica4/Practica4/mux2_1.vhd Line: 19
+Warning (10631): VHDL Process Statement warning at mux2_1.vhd(19): inferring latch(es) for signal or variable "O", which holds its previous value in one or more paths through the process File: D:/proyectosQuartus/PracticasOAC/Practica4/mux2_1.vhd Line: 19
+Info (10041): Inferred latch for "O[0]" at mux2_1.vhd(19) File: D:/proyectosQuartus/PracticasOAC/Practica4/mux2_1.vhd Line: 19
+Info (10041): Inferred latch for "O[1]" at mux2_1.vhd(19) File: D:/proyectosQuartus/PracticasOAC/Practica4/mux2_1.vhd Line: 19
+Info (10041): Inferred latch for "O[2]" at mux2_1.vhd(19) File: D:/proyectosQuartus/PracticasOAC/Practica4/mux2_1.vhd Line: 19
+Info (10041): Inferred latch for "O[3]" at mux2_1.vhd(19) File: D:/proyectosQuartus/PracticasOAC/Practica4/mux2_1.vhd Line: 19
 Warning (12001): Port "prueba[2]" does not exist in entity definition of "divisor_datos".  The port's range differs between the entity definition and its actual instantiation, "divisor_datos:inst5".
-Warning (14026): LATCH primitive "mux4:inst10|O" is permanently enabled File: C:/Users/migue/Desktop/FI-UNAM/Semestre_9.2024-1/Organizacion y Arquitectura de Computadoras/Laboratorio/Practica4/Practica4/mux4.vhd Line: 14
+Warning (14026): LATCH primitive "mux4:inst10|O" is permanently enabled File: D:/proyectosQuartus/PracticasOAC/Practica4/mux4.vhd Line: 14
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 79 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 78 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 6 input pins
     Info (21059): Implemented 7 output pins
-    Info (21061): Implemented 66 logic cells
+    Info (21061): Implemented 65 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 4793 megabytes
-    Info: Processing ended: Fri Sep 29 07:11:58 2023
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:33
+    Info: Peak virtual memory: 4787 megabytes
+    Info: Processing ended: Thu Oct 05 23:24:39 2023
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:22
 
 
